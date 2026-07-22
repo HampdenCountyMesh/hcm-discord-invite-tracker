@@ -12,7 +12,6 @@ from .database import Database
 from .website import render_website_mapping
 
 
-
 class Dashboard:
     def __init__(self, db: Database, settings: Settings, project_name: str):
         self.db = db
