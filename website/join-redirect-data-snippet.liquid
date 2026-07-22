@@ -1,0 +1,3 @@
+{% assign join_source = page.join_source | default: "general" %}
+{% assign mapped_invite_url = site.data.discord_invites.sources[join_source] %}
+{% assign join_url = page.discord_invite_url | default: mapped_invite_url | default: site.discord_invite_url | default: "https://discord.gg/egyUeREcmX" %}

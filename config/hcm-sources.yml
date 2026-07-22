@@ -1,0 +1,49 @@
+project:
+  name: Hampden County Mesh
+  site_base_url: https://hampdencountymesh.org
+
+# These match the live /join/.../ redirect routes in the HCM website repository.
+# Other communities should fork the repository and replace this catalog.
+sources:
+  - slug: general
+    display_name: General join link
+    route: /join/
+    description: Default public link and fallback for unclassified placements.
+    preferred_invite_code: egyUeREcmX
+    provision: false
+
+  - slug: site-nav
+    display_name: Website navigation
+    route: /join/site-nav/
+
+  - slug: home-bottom
+    display_name: Homepage lower call-to-action
+    route: /join/home-bottom/
+
+  - slug: getting-started
+    display_name: Getting Started guide
+    route: /join/getting-started/
+
+  - slug: guides
+    display_name: Guides landing page
+    route: /join/guides/
+
+  - slug: better-coverage
+    display_name: Building Better Mesh Coverage guide
+    route: /join/better-coverage/
+
+  - slug: updates
+    display_name: Updates area
+    route: /join/updates/
+
+  - slug: flier
+    display_name: Printed flier or pamphlet
+    route: /join/flier/
+
+  - slug: card
+    display_name: Printed card
+    route: /join/card/
+
+  - slug: 404
+    display_name: Website 404 page
+    route: /join/404/
