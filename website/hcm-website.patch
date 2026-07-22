@@ -1,0 +1,11 @@
+diff --git a/_layouts/join-redirect.html b/_layouts/join-redirect.html
+--- a/_layouts/join-redirect.html
++++ b/_layouts/join-redirect.html
+@@ -1,5 +1,6 @@
+-{% assign join_url = page.discord_invite_url | default: site.discord_invite_url | default: "https://discord.gg/egyUeREcmX" %}
+ {% assign join_source = page.join_source | default: "general" %}
++{% assign mapped_invite_url = site.data.discord_invites.sources[join_source] %}
++{% assign join_url = page.discord_invite_url | default: mapped_invite_url | default: site.discord_invite_url | default: "https://discord.gg/egyUeREcmX" %}
+ {% assign site_title = site.title | default: "Hampden County Mesh" %}
+ {% assign page_css_version = site.css_version | default: "20260718b" %}
+ {% assign social_image = site.default_social_image | default: "/assets/images/social/mttomrockitt.png" %}
