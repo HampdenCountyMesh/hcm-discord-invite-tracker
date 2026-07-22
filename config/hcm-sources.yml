@@ -47,3 +47,18 @@ sources:
   - slug: 404
     display_name: Website 404 page
     route: /join/404/
+
+  - slug: github-readme
+    display_name: GitHub repository README files
+    route: /join/github-readme/
+    description: Public project and invite-tracker README links.
+
+  - slug: github-docs
+    display_name: GitHub maintainer documentation
+    route: /join/github-docs/
+    description: Discord links in repository documentation under docs/.
+
+  - slug: github-support
+    display_name: GitHub support and issue links
+    route: /join/github-support/
+    description: Discord links in support documentation and issue contact options.
